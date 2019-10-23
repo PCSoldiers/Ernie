@@ -8,8 +8,9 @@ import (
 
 func main() {
 	fmt.Println("\n=== All DartScores (Values and Codes) ===")
-	for _, s := range dart.SortScores(dart.GetScores()) {
-		fmt.Println(s)
+	for _, s := range dart.GetScores() {
+		line := fmt.Sprintf("Score{\"%s\", %d},", s.GetCode(), s.GetValue())
+		fmt.Println(line)
 	}
 	// All Code for points
 	fmt.Println("=== All Codes for single dart scores 1 to 60 ===")

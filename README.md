@@ -9,3 +9,6 @@
 5. In the terminal window type the run command below:
     * c:\\...path...\Ernie>go run app
 
+### Testing
+command: go test vendor/dart
+
